@@ -14,6 +14,10 @@ class String
     self.end_with?("!")
   end
 
+    # regular expression solution
+    # /\.|\?|!/ is a regular expression that searches for periods, 
+    # question marks and exclamations in a string
+
   def count_sentences
     self.split(/\.|\?|!/).filter { |sentence| !sentence.empty? }.length
   end
